@@ -150,27 +150,32 @@ class MTAReader:
     def __correctTypes(self):
         ''' correct df types '''
 
-        """ datetimes """
-        self.df_pre_traffic['datetime'] = pd.to_datetime(
-            self.df_pre_traffic['date'] + self.df_pre_traffic['time'],
-            format="%m-%d-%y%X"
-        )
-        self.df_pre_traffic['date'] = pd.to_datetime(
-            self.df_pre_traffic['date'],
-            format="%m-%d-%y"
-        )
+        try:
+            """ datetimes """
+            self.df_pre_traffic['datetime'] = pd.to_datetime(
+                self.df_pre_traffic['date'] + self.df_pre_traffic['time'],
+                format="%m-%d-%y%X"
+            )
+            self.df_pre_traffic['date'] = pd.to_datetime(
+                self.df_pre_traffic['date'],
+                format="%m-%d-%y"
+            )
 
-        del self.df_pre_traffic['time']
+            del self.df_pre_traffic['time']
 
-        """ numeric """
-        self.df_pre_traffic['odometer_entries'] = self.df_pre_traffic['odometer_entries'].convert_objects(
-            convert_numeric=True
-        ).astype(int)
-        self.df_pre_traffic['odometer_exits'] = self.df_pre_traffic['odometer_exits'].convert_objects(
-            convert_numeric=True
-        ).astype(int)
+            """ numeric """
+            self.df_pre_traffic['odometer_entries'] = self.df_pre_traffic['odometer_entries'].convert_objects(
+                convert_numeric=True
+            ).astype(int)
+            self.df_pre_traffic['odometer_exits'] = self.df_pre_traffic['odometer_exits'].convert_objects(
+                convert_numeric=True
+            ).astype(int)
 
-        print('Types corrected')
+            print('Types corrected')
+        except Exception as inst:
+            print('Exception in correcting df types', inst)
+            print('Writting df pre these changes to:', 'PRE_TYPES.csv')
+            self.df_pre_traffic.to_csv('PRE_TYPES.csv', index=False)
 
     def __computeTraffic(self):
         ''' computes traffic and adds it to df '''
@@ -196,6 +201,8 @@ class MTAReader:
         del df_by_grouping
         self.df = pd.concat(time_series_analyzed_data)
 
+        self.df['cummulative_flow'] = self.df.entries + self.df.exits
+
         print('Computted Traffic')
 
     def __dump(self):
@@ -217,12 +224,46 @@ class MTAReader:
 
         print('Dumped to', processed_file_name)
 
+    def __replaceBadOdometerChanges(self, keys):
+        ''' put into a function, the work to go thru the df was being repeated so this should be MUCH quicker '''
+
+        where = []
+        for i_key, key in enumerate(keys):
+            # if i_key > 1:
+            #     break
+            where.append(
+                self.df[key] < 0
+            )
+
+        located = pd.concat(
+            where,
+            axis=1
+        )
+
+        located['replace'] = False
+        for i_key, key in enumerate(keys):
+            located['replace'] = located['replace'] | located[key]
+
+        print('Fixing # rows:', len(located.loc[located['replace']]))
+
+        for i_key, key in enumerate(keys):
+            self.df.replace(
+                self.df.loc[located['replace']][key].values,
+                0,
+                inplace=True
+            )
+
+        print('Replaced bad odemeter values')
+
     def __sanityCheck(self):
         ''' sanity check
 
         Trouble is we actually should have NaN values at this point, for the
         earliest datetimes, since nothing to subtract from
         '''
+
+        ''' replace negative odometer readings '''
+        self.__replaceBadOdometerChanges(['exits', 'entries', 'cummulative_flow'])
 
         pass
 
@@ -255,5 +296,9 @@ class MTAReader:
         print('')
 
 
-if __name__ == "__main__":
-    reader = MTAReader('data/turnstile_130803.txt')
+# if __name__ == "__main__":
+#     # reader = MTAReader('data/turnstile_130803.txt')
+
+#     # MTAReader('data/turnstile_130706.txt')
+
+#     MTAReader('data/turnstile_130803.txt')
