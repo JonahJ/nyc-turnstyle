@@ -4,7 +4,7 @@ import pandas as pd
 from django.http import HttpResponse
 import json
 from time import mktime
-from datetime import datetime, date
+from datetime import datetime, date, timedelta
 from .models import Stats
 
 
@@ -33,8 +33,8 @@ def parseInputVariables(raw_get):
         print('other', i_key, key)
 
     input_data = json.loads(input_data)[0]
-    input_data['date']['start'] = datetime.strptime(input_data['date']['start'], '%Y-%m-%dT%X.%fZ')
-    input_data['date']['end'] = datetime.strptime(input_data['date']['end'], '%Y-%m-%dT%X.%fZ')
+    input_data['date']['start'] = datetime.strptime(input_data['date']['start'], '%a %b %d %Y')
+    input_data['date']['end'] = datetime.strptime(input_data['date']['end'], '%a %b %d %Y')
     input_data['date']['list'] = input_data['date']['list'].split('\n')
     input_data['date']['list'] = filter(None, input_data['date']['list'])
     for i_date, _date in enumerate(input_data['date']['list']):
@@ -47,20 +47,23 @@ def parseInputVariables(raw_get):
         # )
 
         # print(input_data['date']['list'][i_date])
-    input_data['time']['start_date'] = datetime.strptime(input_data['time']['start_date'], '%Y-%m-%dT%X.%fZ')
-    input_data['time']['end_date'] = datetime.strptime(input_data['time']['end_date'], '%Y-%m-%dT%X.%fZ')
+    input_data['time']['start_date'] = datetime.strptime(input_data['time']['start_date_corrected'], '%a %b %d %Y')
+    input_data['time']['end_date'] = datetime.strptime(input_data['time']['end_date_corrected'], '%a %b %d %Y')
 
     input_data['date']['start'] = input_data['date']['start'].replace(
         hour=input_data['time']['start']['hours'],
         minute=input_data['time']['start']['minutes'],
         second=0,
     )
+    input_data['date']['start'] -= timedelta(seconds=1)
 
     input_data['date']['end'] = input_data['date']['end'].replace(
         hour=input_data['time']['end']['hours'],
         minute=input_data['time']['end']['minutes'],
         second=0,
     )
+
+    input_data['date']['end'] += timedelta(minutes=1)
 
     return input_data
 
@@ -148,13 +151,28 @@ def get(request):
     ''' fill in 0 '''
     df_to_return = df_to_return.fillna(0, axis=1)
 
+    df_max = df_to_return.max()
+    df_max.sort(ascending=False)
+
+    df_min = df_to_return.min()
+    df_min.sort(ascending=False)
+
+    df_mean = df_to_return.mean()
+    df_mean.sort(ascending=False)
+
     ''' ensure index known for js '''
-    df_to_return['_id'] = df_to_return.index
+    # df_to_return['_id'] = df_to_return.index
 
     response_data = {
         'code': 'GOOD',
         'when': datetime.now(),
-        'results': json.loads(df_to_return.to_json(orient='records')),
+        # 'results': df_to_return.to_dict(),
+        'results': json.loads(df_to_return.to_json(orient='columns')),
+        'analysis': {
+            'max': json.loads(df_max.to_json(orient='columns')),
+            'min': json.loads(df_min.to_json(orient='columns')),
+            'mean': json.loads(df_mean.to_json(orient='columns'))
+        }
     }
     print('\n\n')
     return HttpResponse(
