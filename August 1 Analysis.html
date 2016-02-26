@@ -3907,7 +3907,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">time_series_analyzed_data</span> <span class="o">=</span> <span class="p">[]</span>
@@ -3940,7 +3940,7 @@ dtype: bool</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[51]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[28]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -5264,7 +5264,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -5278,7 +5278,7 @@ dtype: bool</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[52]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[29]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -5407,7 +5407,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="p">[[</span><span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="s">&#39;remote_unit&#39;</span><span class="p">,</span> <span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;net_time&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s">&#39;time_series_analyzed_data.csv&#39;</span><span class="p">)</span>
@@ -5421,7 +5421,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">exits</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -5435,7 +5435,7 @@ dtype: bool</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[55]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[31]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -5592,7 +5592,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">index</span> <span class="o">&gt;=</span> <span class="mi">76402</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">index</span> <span class="o">&lt;=</span> <span class="mi">76407</span><span class="p">)]</span>
@@ -5606,7 +5606,7 @@ dtype: bool</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[56]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[32]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -5784,7 +5784,7 @@ dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[123]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -5799,11 +5799,11 @@ dtype: bool</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[123]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[33]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x16513a4d0&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1173c9450&gt;</pre>
 </div>
 
 </div>
@@ -5995,7 +5995,7 @@ AElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[124]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;entries&#39;</span><span class="p">)</span>
@@ -6009,11 +6009,11 @@ AElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[124]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[34]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x15abee390&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1179a3f90&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -6165,7 +6165,7 @@ RK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[35]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -6180,11 +6180,11 @@ RK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[58]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[35]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c1ebe50&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1191901d0&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -6314,7 +6314,7 @@ OUGYmVklJwgzM6vkBGFmZpWcIMzMrJIThJmZVXKCMDOzSv8PadlBgbhWgAQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[36]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">odometer_entries</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
@@ -6328,7 +6328,7 @@ OUGYmVklJwgzM6vkBGFmZpWcIMzMrJIThJmZVXKCMDOzSv8PadlBgbhWgAQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[59]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[36]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -6343,7 +6343,7 @@ OUGYmVklJwgzM6vkBGFmZpWcIMzMrJIThJmZVXKCMDOzSv8PadlBgbhWgAQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[37]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">line_name</span> <span class="o">==</span> <span class="s">&#39;BD4&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">odometer_entries</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
@@ -6357,7 +6357,7 @@ OUGYmVklJwgzM6vkBGFmZpWcIMzMrJIThJmZVXKCMDOzSv8PadlBgbhWgAQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[60]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[37]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -6382,7 +6382,7 @@ OUGYmVklJwgzM6vkBGFmZpWcIMzMrJIThJmZVXKCMDOzSv8PadlBgbhWgAQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[38]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">index</span> <span class="o">&gt;=</span> <span class="mi">57220</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">index</span> <span class="o">&lt;=</span> <span class="mi">57235</span><span class="p">)]</span>
@@ -6396,7 +6396,7 @@ OUGYmVklJwgzM6vkBGFmZpWcIMzMrJIThJmZVXKCMDOzSv8PadlBgbhWgAQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[61]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[38]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -6784,7 +6784,7 @@ OUGYmVklJwgzM6vkBGFmZpWcIMzMrJIThJmZVXKCMDOzSv8PadlBgbhWgAQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[39]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">exits</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">net_time</span>
@@ -6798,7 +6798,7 @@ OUGYmVklJwgzM6vkBGFmZpWcIMzMrJIThJmZVXKCMDOzSv8PadlBgbhWgAQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[62]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[39]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -6828,7 +6828,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[40]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span> <span class="o">=</span> <span class="n">df_pre_final_check</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">deep</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -6897,7 +6897,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 </div>
 </div>
 
-<div class="output_area"><div class="prompt output_prompt">Out[64]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[40]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -7026,7 +7026,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[41]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">entries</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">entries</span><span class="o">.</span><span class="n">values</span>
@@ -7040,7 +7040,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[65]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[41]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
@@ -7055,7 +7055,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[42]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[</span><span class="s">&#39;cummulative_flow&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">entries</span> <span class="o">+</span> <span class="n">df</span><span class="o">.</span><span class="n">exits</span>
@@ -7068,7 +7068,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[43]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s">&#39;data/reduced.csv&#39;</span><span class="p">)</span>
@@ -7081,7 +7081,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[44]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -7095,7 +7095,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[68]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[44]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -7255,7 +7255,7 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[45]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="o">%</span><span class="k">matplotlib</span> inline
@@ -7271,11 +7271,11 @@ Name: net_time, dtype: timedelta64[ns]</pre>
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[69]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[45]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x14a83f650&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x117fc1910&gt;</pre>
 </div>
 
 </div>
@@ -7539,7 +7539,7 @@ hjVJkqSOGdYkSZI6ZliTJEnq2P8PmloYV2LTSCAAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[46]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;station&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">:</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">))</span>
@@ -7553,91 +7553,91 @@ hjVJkqSOGdYkSZI6ZliTJEnq2P8PmloYV2LTSCAAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[70]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[46]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a43d910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13915d2d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1211c5690&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a6da990&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13cc49bd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13a508b10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13bf45110&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13bdb8e10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13b401a10&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x13a704b50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13a1fc490&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1398925d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1398a1710&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135320fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12759bd90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12127a110&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13ff56350&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13f06e990&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x140520bd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13eebc4d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13cf45510&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x141d97850&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13f3b8250&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13d4f30d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13d296990&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13a0a1ad0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13b6edd10&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x13b357bd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13f221e10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13f466490&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14068a6d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13f92b410&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13eb35fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13d75bf10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13d4aea50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13c4a2b90&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x13c3b2fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13c7e35d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13b9ee810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x141a326d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1403f5910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14003cf50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13df6e1d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13e2abed0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13d0c2ad0&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x13c17ac10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x138080550&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x138132690&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x138118a10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13b1300d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13ac48310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13aabd1d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x148709410&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13d7ada50&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x13d5c8c90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14ad309d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1499d75d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149afb710&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149ce2f10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a026f50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149e9c8d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149abd750&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1498fa550&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x149de6c90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149b349d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149861450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13b856310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13c6ee050&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x136931c50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13d712a50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1412ac910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a282950&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a176d50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13105e150&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1310e7f10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x141d72c10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x141941210&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127647cd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133b63290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x137554cd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x139ec1490&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x117a68b90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117d3cd50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119d6d490&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119e1d550&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1195db790&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117f36750&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118b0ec90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118cdd9d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117e105d0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x117b4e710&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117d83050&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1191c5190&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118f53850&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1190aaa90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117e5fa10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118f78d90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117ccbad0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11902c550&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x118daa590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118ef01d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118a05cd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118c33ad0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118916590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118a725d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118805210&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118982d90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118708d10&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x118860a50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118611a90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1188aaf10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11864b290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1186c1090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1185457d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1185cd510&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1182e8f50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11845ae10&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x118324b50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11802f790&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11826d590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118273450&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11813e490&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11828ad10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117eb8c50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119241a50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1179b71d0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x117c01ed0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1188405d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1193d9290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119452e90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1194c2bd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119553250&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11957ae50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11964add0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1196f1a10&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11974f690&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1197af490&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11986e350&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1198d5390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11988b590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1199bab50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119a68950&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119ad10d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119b5cdd0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x119c46850&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119da0710&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119e86450&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119f16090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117c95e50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117f2cd10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1180e5d50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x117f8fc90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x118e51550&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x119db5350&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119fa6a90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c6267d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x119819a50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11d11e990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11a0f45d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11abbb090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11b726d90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c5be9d0&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -10976,7 +10976,7 @@ XgkhhBBCCCGEEEKIYtHDKyGEEEIIIYQQQghRLP8PmHwpefOjzpEAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[47]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;station&#39;</span><span class="p">)[</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">))</span>
@@ -10990,110 +10990,110 @@ XgkhhBBCCCGEEEKIYtHDKyGEEEIIIYQQQghRLP8PmHwpefOjzpEAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[71]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[47]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1436dc750&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13f87bc10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149fe83d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a0c1290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a0de2d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149954b90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11dda2d50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11de15f90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11de6f9d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11dee1c10&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11df3c350&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11dfb0590&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11df65bd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11e07ac10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11e0eeb90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a12f0d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a258dd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a3e7850&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14a6cf890&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14abdb4d0&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x14ac83090&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14af98fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c320d10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c56ed50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c34c310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c650550&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cad14d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cb2da90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cba87d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cc05250&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x14ce50110&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cebde10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cf24a50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1501bd850&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15021b710&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x150467950&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x150246b50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15053cf10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1505b6e90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x151f37490&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x151faf1d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x151ff6c10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15207aad0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1520f3810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15215a450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1521d5250&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x152233110&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1522ac350&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15225e110&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x152382910&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1523fc890&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x152457e50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1524cfb90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15252f610&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x153b634d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x153bdc210&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x153c37e10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x153cb1c10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x153d0dad0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x153d86d10&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x153d39f10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x153e69310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15459b290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1545f7850&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x154672590&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1546b9fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15473de90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1547b6bd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15481e810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155498610&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1554f64d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155570510&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155521d90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155642cd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1556bead0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155726250&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155793f50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1557e69d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15586b890&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1558e45d0&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1501e9f10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13101fdd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13b942ed0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13bf64c50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155997490&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1559f90d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155a65e90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155ac2d50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155b3bd90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155aefcd0&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x155c1e590&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155c99390&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155cf5ad0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155d6e810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155dcb290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155e46150&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155eb3e50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155f18a90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155f94890&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155ff1750&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1248bab50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12498bd90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x124a44b10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x124adccd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x124aefbd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x124ac4110&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11abf36d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c04b910&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c0a5350&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c117590&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c165c90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c1daed0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c199590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c2b0590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c324510&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c37ca10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c3f1750&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c136990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c48a090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11ca58c90&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11cac3090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11cb2dd90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x126cf79d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x126d7a950&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x126df4590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x126e5a210&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x126ec9fd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x126f27e90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x126fa0ed0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x126f52cd0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1270816d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1270fc4d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127156c10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1271d0950&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1272313d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1272a8290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127315f90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12737ebd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1273f99d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127454890&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1274ce8d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12747fdd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1275af0d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12761ce90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127684610&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1276fe350&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127745d90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1277c9c50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127844990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1278ac5d0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1279243d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127983290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1279fb2d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1279a24d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127ad1a90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127b4d890&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127ba7fd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127c21d10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127c80790&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127cf7650&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x127d72390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127dccf90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127e47d90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127ea4c50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127f1dc90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127ed0650&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127fff490&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128079290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1280d59d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12814f710&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1281ad190&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128227050&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128295d50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1282f9990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128376790&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12742ea50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128411e90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128447d50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1284f1990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12856b5d0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1285c8650&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128641390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1285e8190&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128717f50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128792b90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1287f9210&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128867f10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1288b9b50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12893ead0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1289b7710&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x128a1f390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128a99190&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128af7050&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128b72090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128b15150&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128c43850&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128cbe650&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128d1bd90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128d95ad0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128df4550&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -15052,7 +15052,7 @@ ZmZmZmYj5f8DN4sdenpKWxoAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[48]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;station&#39;</span><span class="p">)[</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">3</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">))</span>
@@ -15066,120 +15066,120 @@ ZmZmZmYj5f8DN4sdenpKWxoAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[79]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[48]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1570cce50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1589060d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1588ab710&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1588e8fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12231ac90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1222a7f50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1223ee910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12246bb50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1224d71d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122554410&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1225a9b10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122626d50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1225e0fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12270f590&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12278d7d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1227ee790&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12286b9d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1228ce050&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12294c290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1229c1f90&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x122a31b90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122ab4cd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122b1b610&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122b9b750&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122bb6c10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122c8f190&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122d113d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122d77290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122df94d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122e47b10&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x130e9eb50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x130f22890&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x130f934d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149209450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x149262fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14b21a250&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14b1c78d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14b303810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14b388790&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14b3ecd50&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x14b471a90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14b4d7510&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c2913d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c913110&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c975d10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14c9f8b10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14ca619d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cc8cc10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cc3bed0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14cd82210&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x150138190&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15897b750&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1589ff490&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x158a4fed0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15989fd90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159923ad0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159993710&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159a18510&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159a7f3d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159b01610&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x159aad810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159be8bd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159c6db50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159c86c10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x128702ed0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x155a87a50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1522b8e90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11dea2ad0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159d3ead0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159dbbb50&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x159e1e450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159ea1690&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159e4e910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x159f89c50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a00fbd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a07f1d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a0f6ed0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a151950&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a1e2810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a264550&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a2d5190&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a34df50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a3b2e10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a436e50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a3e2c50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a52b650&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a5b0450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a613b90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a6988d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a6fe350&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a782210&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a7f9f10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a869b50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a8ed950&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a954810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a9d7850&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a982290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15aacd050&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ab41e10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15abb5590&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ac3a2d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ac88d10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ad17bd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ad9b910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ae0a550&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ae90350&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15aef5210&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15af78250&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15af19450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15b05fa10&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x128efd390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12a835a10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1281cb890&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127800a50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11c0cc290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x127176ed0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12979eed0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x129c977d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12a046f90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12b815210&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12b7cec50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x121b81c90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x121bff8d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x121c6c550&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12c9a84d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ca0b150&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ca87390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ca36150&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cb66950&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cbe4750&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cc44e90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ccc3bd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cd27650&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cda4510&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ce23250&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ce84e50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cf02c50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cf62b10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cfe2b50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12cf8f510&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d0cf350&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d153150&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d1b8890&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d23c5d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d2a3050&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d318ed0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d39dc10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d40d850&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d491650&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d4f9510&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d57b550&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d526dd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d662d10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d6e7b10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d759290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d7cdf90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d82ba10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d8bb8d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d93e610&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12d9af250&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12da35050&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12da8bed0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12db0df10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12dabbe10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12dc04710&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12dc89510&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12dcebc50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12dd71990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ddd6410&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12de5b2d0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ded2fd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12df41c10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12dfc6a10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e02c8d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e0b0910&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e05be10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e1a5110&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e21ced0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e28b650&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e312390&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e359dd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e3eec90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e4739d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e4e4610&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e569410&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e5ce2d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e651310&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e5f1510&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e738ad0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e7bc8d0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e82f050&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e8a6d50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e8fe7d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12e98d690&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ea143d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ea75fd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12eafadd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12eb60c90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ebe5cd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12eb90bd0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ecda4d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ed5f2d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12edc2a10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ee47750&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12eeac1d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12ef32090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12efa9d90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x129d8d390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f03dd50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f0a3910&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f127650&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f1ac390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f21b250&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f295e50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f2fac10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f37f950&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f31f890&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f471550&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f4f7190&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f55c7d0&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -19457,9 +19457,19 @@ rkJggg==
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Exhange-place-looks-bad...">Exhange place looks bad...<a class="anchor-link" href="#Exhange-place-looks-bad...">&#182;</a></h2><p>Extreme tail. 5th row, 2nd col</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[49]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;station&#39;</span><span class="p">)[</span><span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)</span> <span class="o">/</span> <span class="mi">4</span> <span class="o">*</span> <span class="mi">3</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">df</span><span class="p">)]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">by</span><span class="o">=</span><span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">30</span><span class="p">))</span>
@@ -19473,120 +19483,120 @@ rkJggg==
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[80]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[49]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x15b258cd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15df9f090&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15beff810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15c2ee2d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15e1c1610&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15c416890&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15e304dd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x121cdd050&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1494e8bd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x151277190&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1512cea10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x158c21c50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x151305310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f19d310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f21a450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f27c790&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f2f84d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f344f10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f3cdf50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f44bb90&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f4b6750&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f5346d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f596410&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f615450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f5c4990&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f6f6c10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f77ab90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f7ea190&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f862e90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f8bc910&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f94d7d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15f9d0510&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fa40150&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fab7f10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fb1cdd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fbaf050&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fb57590&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fc94610&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fd17590&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fd7bb50&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fe00890&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fe67310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15fee91d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ff60ed0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15ffd1b10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160054910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1600ba7d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16013da10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1600e9cd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160223fd0&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1602a8f50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16031a550&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16039f290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1603edcd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16047bb90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1605008d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160570510&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1605f5310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16065b1d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1606dc410&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1606871d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1607c69d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16084b950&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1608aef10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160931c50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1609986d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160a1b590&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160aa12d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160b02ed0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160b87cd0&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x160beeb90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160c71dd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160c1bb10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160d673d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160dec350&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160e4d910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160ed2650&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x14b2ba4d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15d461a90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x15a5c9850&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1576ff290&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x122e81fd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x158906b90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x160ffdd90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16107d9d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1610e9650&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16116d450&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1611d4310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161257350&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1611f6550&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x16133fb10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1613c3910&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161434090&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1614aad90&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161507810&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1615966d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16161b410&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x16168c050&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161702e10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161768cd0&gt;],
-       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1617ead10&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161798c50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1618e0510&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161965310&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1619c7a50&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161a4d790&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161ab4210&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161b360d0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161baddd0&gt;,
-        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x161c1da10&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x12f643790&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13220d590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1302d1110&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13236fb90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13243c8d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1323d6e50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13249f990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11ab10bd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11b7e5790&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x11b862d10&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x11b8c45d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12b888810&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x12b839ad0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13326de90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1332e9fd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133356350&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1333d6090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13341ead0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1334a8b10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133528750&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x133592310&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133611290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133666f90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1336e3fd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13369e090&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1337d27d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133857750&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1338bad10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13393da50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1339a54d0&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x133a28390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133aac0d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133b0fcd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133b93ad0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133bf7990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133c7bbd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133c27e50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133d6e1d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133df3150&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133e56710&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x133edb450&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133f2ae90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x133fb7d50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13403ca90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1340ad6d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1341314d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134195390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1342195d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1341c37d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134300b90&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x134385b10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1343f6110&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13446ee10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1344c7890&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134556750&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1345da490&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13464d0d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1346c3e90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134728d50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1347abf90&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x134762510&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1348a1590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134925510&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13498aad0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134a0f810&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134a75290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134af8150&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134b70e50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134bdea90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134c63890&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x134ccb750&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134d4c990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134cf7c10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134e35f50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134eb9ed0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134f294d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134fad210&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x134ffdc50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13508cb10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135110850&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x121c789d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1351911d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1351ded50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13526cc10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1352f2950&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135361590&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1353e6390&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13544e250&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1354cf290&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13546f490&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1355b7a50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13563d850&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1356a0f90&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135722cd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13578b750&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13580e610&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135893350&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1358f4f50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x13597bd50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x1359dec10&gt;],
+       [&lt;matplotlib.axes._subplots.AxesSubplot object at 0x135a62c50&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135a0e790&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135b58450&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135bdc250&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135c3f990&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135cc76d0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135d2d150&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135da4fd0&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135e27d10&gt;,
+        &lt;matplotlib.axes._subplots.AxesSubplot object at 0x135e97950&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -24036,7 +24046,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[50]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">by_station</span> <span class="o">=</span> <span class="p">[]</span>
@@ -24063,7 +24073,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[81]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[50]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -24120,7 +24130,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[51]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s">&#39;station&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;ATLANTIC AVE&#39;</span><span class="p">][[</span><span class="s">&#39;scp&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">,</span> <span class="s">&#39;odometer_entries&#39;</span><span class="p">,</span> <span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;odometer_exits&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;datetime&#39;</span><span class="p">)</span>
@@ -24134,7 +24144,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[82]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[51]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -24714,7 +24724,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[52]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">by_scp</span> <span class="o">=</span> <span class="p">[]</span>
@@ -24741,7 +24751,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[83]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[52]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -24798,7 +24808,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s">&#39;scp&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;00-03-00&#39;</span><span class="p">][[</span><span class="s">&#39;scp&#39;</span><span class="p">,</span> <span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">,</span> <span class="s">&#39;csv_row&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -24812,7 +24822,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[84]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[53]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -24875,7 +24885,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="p">[</span><span class="s">&#39;csv_row&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="mi">27979</span> <span class="p">)</span><span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s">&#39;csv_row&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="mi">27981</span><span class="p">)][[</span><span class="s">&#39;csv_row&#39;</span><span class="p">,</span> <span class="s">&#39;description&#39;</span><span class="p">,</span> <span class="s">&#39;scp&#39;</span><span class="p">,</span> <span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="s">&#39;odometer_entries&#39;</span><span class="p">,</span> <span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;odometer_exits&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">]]</span>
@@ -24889,7 +24899,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[85]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[54]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -25210,7 +25220,7 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[55]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">scp</span> <span class="o">==</span> <span class="s">&#39;00-03-00&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">station</span> <span class="o">==</span> <span class="s">&#39;ATLANTIC AVE&#39;</span><span class="p">)]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;entries&#39;</span><span class="p">)</span>
@@ -25224,11 +25234,11 @@ zMysVf5/L72ycu+hVLIAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[86]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[55]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x161eb5850&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x138e324d0&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -25361,7 +25371,7 @@ mtAR2i/XO79jcq5l4pdtfThl2gi8sWP/+Mu27gI+3bF/nzSh4y/banTcdmba/1NgRVe2y2g/Ovwt
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[56]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s">&#39;scp&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s">&#39;00-03-00&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;exits&#39;</span><span class="p">)</span>
@@ -25375,11 +25385,11 @@ mtAR2i/XO79jcq5l4pdtfThl2gi8sWP/+Mu27gI+3bF/nzSh4y/banTcdmba/1NgRVe2y2g/Ovwt
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[87]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[56]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x16422bfd0&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x138eea690&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -25527,7 +25537,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">csv_row</span> <span class="o">==</span> <span class="mi">27980</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">entries</span> <span class="o">==</span> <span class="mi">3572935</span><span class="p">)]</span>
@@ -25541,7 +25551,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[93]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[57]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -25568,10 +25578,31 @@ tQe37UkRKXQAAAAASUVORK5CYII=
       <th>net_time</th>
       <th>net_flow</th>
       <th>cummulative_flow</th>
-      <th>manually_corrected</th>
     </tr>
   </thead>
   <tbody>
+    <tr>
+      <th>207099</th>
+      <td>R610</td>
+      <td>False</td>
+      <td>27980</td>
+      <td>2013-07-29</td>
+      <td>REGULAR</td>
+      <td>IRT</td>
+      <td>6</td>
+      <td>2345BDNQR</td>
+      <td>3934843</td>
+      <td>20330687</td>
+      <td>R057</td>
+      <td>00-03-00</td>
+      <td>ATLANTIC AVE</td>
+      <td>2013-07-29 12:00:00</td>
+      <td>3572935</td>
+      <td>20241975</td>
+      <td>02:54:06</td>
+      <td>-16669040</td>
+      <td>23814910</td>
+    </tr>
   </tbody>
 </table>
 </div>
@@ -25585,7 +25616,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[</span><span class="s">&#39;manually_corrected&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
@@ -25598,7 +25629,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="mi">207099</span><span class="p">,</span> <span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
@@ -25613,7 +25644,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[95]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[59]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -27061,7 +27092,773 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">exchange_place</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">station</span> <span class="o">==</span> <span class="s">&#39;EXCHANGE PLACE&#39;</span><span class="p">]</span>
+<span class="n">exchange_place</span> <span class="o">=</span> <span class="n">exchange_place</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">exchange_place</span><span class="p">[[</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">]][</span><span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[84]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>entries</th>
+      <th>exits</th>
+      <th>datetime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>124301</th>
+      <td>71284</td>
+      <td>324989</td>
+      <td>2013-07-30 09:26:36</td>
+    </tr>
+    <tr>
+      <th>124087</th>
+      <td>47242</td>
+      <td>6942</td>
+      <td>2013-07-31 07:18:52</td>
+    </tr>
+    <tr>
+      <th>124096</th>
+      <td>44581</td>
+      <td>4396</td>
+      <td>2013-08-01 10:51:31</td>
+    </tr>
+    <tr>
+      <th>123475</th>
+      <td>992</td>
+      <td>34</td>
+      <td>2013-07-29 20:23:02</td>
+    </tr>
+    <tr>
+      <th>123453</th>
+      <td>990</td>
+      <td>18</td>
+      <td>2013-08-01 20:44:03</td>
+    </tr>
+    <tr>
+      <th>123494</th>
+      <td>913</td>
+      <td>37</td>
+      <td>2013-08-01 19:47:02</td>
+    </tr>
+    <tr>
+      <th>123533</th>
+      <td>885</td>
+      <td>74</td>
+      <td>2013-08-01 20:50:43</td>
+    </tr>
+    <tr>
+      <th>123527</th>
+      <td>876</td>
+      <td>65</td>
+      <td>2013-07-31 19:38:43</td>
+    </tr>
+    <tr>
+      <th>123608</th>
+      <td>847</td>
+      <td>328</td>
+      <td>2013-07-29 19:27:26</td>
+    </tr>
+    <tr>
+      <th>123447</th>
+      <td>829</td>
+      <td>17</td>
+      <td>2013-07-31 19:32:03</td>
+    </tr>
+    <tr>
+      <th>123736</th>
+      <td>826</td>
+      <td>131009</td>
+      <td>2013-08-01 13:11:45</td>
+    </tr>
+    <tr>
+      <th>123516</th>
+      <td>819</td>
+      <td>94</td>
+      <td>2013-07-29 21:24:08</td>
+    </tr>
+    <tr>
+      <th>123488</th>
+      <td>816</td>
+      <td>31</td>
+      <td>2013-07-31 18:35:02</td>
+    </tr>
+    <tr>
+      <th>123483</th>
+      <td>749</td>
+      <td>32</td>
+      <td>2013-07-30 21:35:02</td>
+    </tr>
+    <tr>
+      <th>123586</th>
+      <td>730</td>
+      <td>218</td>
+      <td>2013-08-01 20:44:42</td>
+    </tr>
+    <tr>
+      <th>123434</th>
+      <td>712</td>
+      <td>12</td>
+      <td>2013-07-29 21:20:03</td>
+    </tr>
+    <tr>
+      <th>124223</th>
+      <td>710</td>
+      <td>383</td>
+      <td>2013-07-31 11:11:49</td>
+    </tr>
+    <tr>
+      <th>123614</th>
+      <td>688</td>
+      <td>482</td>
+      <td>2013-07-30 20:39:26</td>
+    </tr>
+    <tr>
+      <th>123521</th>
+      <td>687</td>
+      <td>85</td>
+      <td>2013-07-30 18:24:08</td>
+    </tr>
+    <tr>
+      <th>124225</th>
+      <td>667</td>
+      <td>267</td>
+      <td>2013-07-31 19:35:49</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">exchange_place</span> <span class="o">=</span> <span class="n">exchange_place</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">exchange_place</span><span class="p">[[</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">]][</span><span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[83]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>entries</th>
+      <th>exits</th>
+      <th>datetime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>124301</th>
+      <td>71284</td>
+      <td>324989</td>
+      <td>2013-07-30 09:26:36</td>
+    </tr>
+    <tr>
+      <th>123736</th>
+      <td>826</td>
+      <td>131009</td>
+      <td>2013-08-01 13:11:45</td>
+    </tr>
+    <tr>
+      <th>124087</th>
+      <td>47242</td>
+      <td>6942</td>
+      <td>2013-07-31 07:18:52</td>
+    </tr>
+    <tr>
+      <th>124096</th>
+      <td>44581</td>
+      <td>4396</td>
+      <td>2013-08-01 10:51:31</td>
+    </tr>
+    <tr>
+      <th>123652</th>
+      <td>257</td>
+      <td>1488</td>
+      <td>2013-07-30 10:23:34</td>
+    </tr>
+    <tr>
+      <th>123779</th>
+      <td>60</td>
+      <td>1259</td>
+      <td>2013-08-01 10:22:32</td>
+    </tr>
+    <tr>
+      <th>123658</th>
+      <td>198</td>
+      <td>1224</td>
+      <td>2013-07-31 11:29:48</td>
+    </tr>
+    <tr>
+      <th>123624</th>
+      <td>146</td>
+      <td>1169</td>
+      <td>2013-08-01 10:27:26</td>
+    </tr>
+    <tr>
+      <th>123760</th>
+      <td>78</td>
+      <td>1129</td>
+      <td>2013-07-29 10:58:32</td>
+    </tr>
+    <tr>
+      <th>123606</th>
+      <td>187</td>
+      <td>1087</td>
+      <td>2013-07-29 11:03:26</td>
+    </tr>
+    <tr>
+      <th>123766</th>
+      <td>55</td>
+      <td>1060</td>
+      <td>2013-07-30 12:10:32</td>
+    </tr>
+    <tr>
+      <th>123717</th>
+      <td>112</td>
+      <td>1051</td>
+      <td>2013-07-30 10:47:45</td>
+    </tr>
+    <tr>
+      <th>123612</th>
+      <td>107</td>
+      <td>1049</td>
+      <td>2013-07-30 12:15:26</td>
+    </tr>
+    <tr>
+      <th>123669</th>
+      <td>185</td>
+      <td>1045</td>
+      <td>2013-08-02 09:41:48</td>
+    </tr>
+    <tr>
+      <th>124313</th>
+      <td>149</td>
+      <td>1021</td>
+      <td>2013-07-31 20:22:05</td>
+    </tr>
+    <tr>
+      <th>123617</th>
+      <td>133</td>
+      <td>1021</td>
+      <td>2013-07-31 09:15:26</td>
+    </tr>
+    <tr>
+      <th>123688</th>
+      <td>360</td>
+      <td>1017</td>
+      <td>2013-08-01 10:35:27</td>
+    </tr>
+    <tr>
+      <th>123630</th>
+      <td>103</td>
+      <td>1010</td>
+      <td>2013-08-02 11:39:26</td>
+    </tr>
+    <tr>
+      <th>123785</th>
+      <td>45</td>
+      <td>995</td>
+      <td>2013-08-02 10:38:07</td>
+    </tr>
+    <tr>
+      <th>123724</th>
+      <td>113</td>
+      <td>925</td>
+      <td>2013-07-31 11:59:45</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="PAVONIA/NEWPORT">PAVONIA/NEWPORT<a class="anchor-link" href="#PAVONIA/NEWPORT">&#182;</a></h2>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">pav</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">station</span> <span class="o">==</span> <span class="s">&#39;PAVONIA/NEWPORT&#39;</span><span class="p">]</span>
+
+<span class="n">pav</span> <span class="o">=</span> <span class="n">pav</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="n">pav</span><span class="p">[[</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">,</span> <span class="s">&#39;scp&#39;</span><span class="p">]][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[109]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>entries</th>
+      <th>exits</th>
+      <th>datetime</th>
+      <th>scp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>124595</th>
+      <td>277107</td>
+      <td>21841</td>
+      <td>2013-08-01 01:37:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124587</th>
+      <td>1626</td>
+      <td>335</td>
+      <td>2013-07-30 19:45:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124607</th>
+      <td>1544</td>
+      <td>245</td>
+      <td>2013-08-02 19:37:52</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124546</th>
+      <td>1536</td>
+      <td>351</td>
+      <td>2013-07-30 20:17:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124540</th>
+      <td>1489</td>
+      <td>233</td>
+      <td>2013-07-29 19:05:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124581</th>
+      <td>1468</td>
+      <td>145</td>
+      <td>2013-07-29 18:33:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124635</th>
+      <td>1420</td>
+      <td>235</td>
+      <td>2013-07-31 19:34:29</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124559</th>
+      <td>1335</td>
+      <td>122</td>
+      <td>2013-08-01 18:29:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124601</th>
+      <td>1325</td>
+      <td>109</td>
+      <td>2013-08-01 18:25:53</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124565</th>
+      <td>1298</td>
+      <td>251</td>
+      <td>2013-08-02 19:53:54</td>
+      <td>00-00-00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">pav</span> <span class="o">=</span> <span class="n">pav</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="n">pav</span><span class="p">[[</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">,</span> <span class="s">&#39;scp&#39;</span><span class="p">]][</span><span class="mi">0</span><span class="p">:</span><span class="mi">10</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[110]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>entries</th>
+      <th>exits</th>
+      <th>datetime</th>
+      <th>scp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>124595</th>
+      <td>277107</td>
+      <td>21841</td>
+      <td>2013-08-01 01:37:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124760</th>
+      <td>164</td>
+      <td>1608</td>
+      <td>2013-07-31 10:21:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124749</th>
+      <td>146</td>
+      <td>1525</td>
+      <td>2013-07-29 12:09:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124751</th>
+      <td>239</td>
+      <td>1329</td>
+      <td>2013-07-29 20:33:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124754</th>
+      <td>88</td>
+      <td>1327</td>
+      <td>2013-07-30 09:09:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124803</th>
+      <td>189</td>
+      <td>1263</td>
+      <td>2013-07-31 19:56:40</td>
+      <td>00-00-06</td>
+    </tr>
+    <tr>
+      <th>124770</th>
+      <td>314</td>
+      <td>1241</td>
+      <td>2013-08-01 19:57:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124811</th>
+      <td>150</td>
+      <td>1227</td>
+      <td>2013-08-01 21:08:40</td>
+      <td>00-00-06</td>
+    </tr>
+    <tr>
+      <th>124757</th>
+      <td>182</td>
+      <td>1184</td>
+      <td>2013-07-30 21:45:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124792</th>
+      <td>104</td>
+      <td>1177</td>
+      <td>2013-07-29 21:44:40</td>
+      <td>00-00-06</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Fix-above-few-rows">Fix above few rows<a class="anchor-link" href="#Fix-above-few-rows">&#182;</a></h1>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">bad_rows</span> <span class="o">=</span> <span class="p">[</span><span class="mi">124301</span><span class="p">,</span> <span class="mi">124087</span><span class="p">,</span> <span class="mi">123736</span><span class="p">,</span> <span class="mi">124096</span><span class="p">,</span> <span class="mi">124595</span><span class="p">]</span>
+
+<span class="k">for</span> <span class="n">row_id</span> <span class="ow">in</span> <span class="n">bad_rows</span><span class="p">:</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="n">row_id</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+    <span class="n">df</span><span class="o">.</span><span class="n">set_value</span><span class="p">(</span><span class="n">row_id</span><span class="p">,</span> <span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">exchange_place_fixed</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">station</span> <span class="o">==</span> <span class="s">&#39;EXCHANGE PLACE&#39;</span><span class="p">]</span>
+<span class="n">exchange_place_fixed</span> <span class="o">=</span> <span class="n">exchange_place_fixed</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="n">exchange_place_fixed</span><span class="p">[[</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">]][</span><span class="mi">0</span><span class="p">:</span><span class="mi">20</span><span class="p">]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[112]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>entries</th>
+      <th>exits</th>
+      <th>datetime</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>123475</th>
+      <td>992</td>
+      <td>34</td>
+      <td>2013-07-29 20:23:02</td>
+    </tr>
+    <tr>
+      <th>123453</th>
+      <td>990</td>
+      <td>18</td>
+      <td>2013-08-01 20:44:03</td>
+    </tr>
+    <tr>
+      <th>123494</th>
+      <td>913</td>
+      <td>37</td>
+      <td>2013-08-01 19:47:02</td>
+    </tr>
+    <tr>
+      <th>123533</th>
+      <td>885</td>
+      <td>74</td>
+      <td>2013-08-01 20:50:43</td>
+    </tr>
+    <tr>
+      <th>123527</th>
+      <td>876</td>
+      <td>65</td>
+      <td>2013-07-31 19:38:43</td>
+    </tr>
+    <tr>
+      <th>123608</th>
+      <td>847</td>
+      <td>328</td>
+      <td>2013-07-29 19:27:26</td>
+    </tr>
+    <tr>
+      <th>123447</th>
+      <td>829</td>
+      <td>17</td>
+      <td>2013-07-31 19:32:03</td>
+    </tr>
+    <tr>
+      <th>123516</th>
+      <td>819</td>
+      <td>94</td>
+      <td>2013-07-29 21:24:08</td>
+    </tr>
+    <tr>
+      <th>123488</th>
+      <td>816</td>
+      <td>31</td>
+      <td>2013-07-31 18:35:02</td>
+    </tr>
+    <tr>
+      <th>123483</th>
+      <td>749</td>
+      <td>32</td>
+      <td>2013-07-30 21:35:02</td>
+    </tr>
+    <tr>
+      <th>123586</th>
+      <td>730</td>
+      <td>218</td>
+      <td>2013-08-01 20:44:42</td>
+    </tr>
+    <tr>
+      <th>123434</th>
+      <td>712</td>
+      <td>12</td>
+      <td>2013-07-29 21:20:03</td>
+    </tr>
+    <tr>
+      <th>124223</th>
+      <td>710</td>
+      <td>383</td>
+      <td>2013-07-31 11:11:49</td>
+    </tr>
+    <tr>
+      <th>123614</th>
+      <td>688</td>
+      <td>482</td>
+      <td>2013-07-30 20:39:26</td>
+    </tr>
+    <tr>
+      <th>123521</th>
+      <td>687</td>
+      <td>85</td>
+      <td>2013-07-30 18:24:08</td>
+    </tr>
+    <tr>
+      <th>124225</th>
+      <td>667</td>
+      <td>267</td>
+      <td>2013-07-31 19:35:49</td>
+    </tr>
+    <tr>
+      <th>124217</th>
+      <td>665</td>
+      <td>294</td>
+      <td>2013-07-30 09:45:49</td>
+    </tr>
+    <tr>
+      <th>123441</th>
+      <td>657</td>
+      <td>14</td>
+      <td>2013-07-30 18:20:03</td>
+    </tr>
+    <tr>
+      <th>123679</th>
+      <td>644</td>
+      <td>627</td>
+      <td>2013-07-30 20:47:27</td>
+    </tr>
+    <tr>
+      <th>123726</th>
+      <td>639</td>
+      <td>207</td>
+      <td>2013-07-31 20:23:45</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[113]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">by_scp</span> <span class="o">=</span> <span class="p">[]</span>
@@ -27088,7 +27885,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[97]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[113]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -27145,7 +27942,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[114]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">by_scp</span> <span class="o">=</span> <span class="n">by_scp</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span>
@@ -27164,7 +27961,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[98]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[114]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -27231,7 +28028,7 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[115]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">scp</span> <span class="o">==</span> <span class="s">&#39;00-03-00&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;exits&#39;</span><span class="p">)</span>
@@ -27245,11 +28042,11 @@ tQe37UkRKXQAAAAASUVORK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[99]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[115]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x1632a9ed0&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x13cee21d0&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -27380,7 +28177,7 @@ YII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[116]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">scp</span> <span class="o">==</span> <span class="s">&#39;00-03-01&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">hist</span><span class="p">(</span><span class="n">column</span><span class="o">=</span><span class="s">&#39;exits&#39;</span><span class="p">)</span>
@@ -27394,11 +28191,11 @@ YII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[100]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[116]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x164e1eb50&gt;]], dtype=object)</pre>
+<pre>array([[&lt;matplotlib.axes._subplots.AxesSubplot object at 0x13ce90190&gt;]], dtype=object)</pre>
 </div>
 
 </div>
@@ -27538,7 +28335,7 @@ mJlZzUXBzMxqLgpmZlZzUTAzs9q/A28ES1MEeocHAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[104]:</div>
+<div class="prompt input_prompt">In&nbsp;[117]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df</span><span class="p">[(</span><span class="n">df</span><span class="o">.</span><span class="n">scp</span> <span class="o">==</span> <span class="s">&#39;00-03-01&#39;</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">station</span> <span class="o">==</span> <span class="s">&#39;ATLANTIC AVE&#39;</span><span class="p">)][[</span><span class="s">&#39;csv_row&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">]]</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
@@ -27552,7 +28349,7 @@ mJlZzUXBzMxqLgpmZlZzUTAzs9q/A28ES1MEeocHAAAAAElFTkSuQmCC
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[104]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[117]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -27976,10 +28773,11 @@ mJlZzUXBzMxqLgpmZlZzUTAzs9q/A28ES1MEeocHAAAAAElFTkSuQmCC
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[106]:</div>
+<div class="prompt input_prompt">In&nbsp;[118]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython2"><pre><span class="n">august_1_2013</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">date</span> <span class="o">==</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2013</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
+<div class=" highlight hl-ipython2"><pre><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+<span class="n">august_1_2013</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">date</span> <span class="o">==</span> <span class="n">datetime</span><span class="p">(</span><span class="mi">2013</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">1</span><span class="p">)]</span>
 
 <span class="c"># august_1_2013.to_csv(&#39;august1st.csv&#39;)</span>
 
@@ -28004,9 +28802,9 @@ mJlZzUXBzMxqLgpmZlZzUTAzs9q/A28ES1MEeocHAAAAAElFTkSuQmCC
 
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>entries     5922368
-exits       4588930
-total      10511298
+<pre>entries     5599854
+exits       4431684
+total      10031538
 dtype: float64
 10511298.0
 </pre>
@@ -28024,10 +28822,746 @@ dtype: float64
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Analysis-1">Analysis 1<a class="anchor-link" href="#Analysis-1">&#182;</a></h2><p>According to the <a href="http://web.mta.info/nyct/facts/ridership/">Subway Ridership at a Glance</a>, I am roughly hitting the average, if the MTA is calculating ridership as a function of entries only. August 1st, 2013 was a Thursay, so there is weekday commmuting traffic in addition to the beginning of late night activities for many people. My number is a little high, but not that far off, as it is the summer and there could be a larger number of people vacationing in NYC at the time.</p>
 <p>( computed - MTA reported avg for year ) / (MTA reported avg for year)</p>
-<p>( 5922368 - 5465034 ) / 5465034 = ~0.084 or 8.4% error from the known avg for the year</p>
+<p>( 5599854 - 5465034 ) / 5465034 = ~0.035 or 2.5% error from the known avg for the year</p>
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[119]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">august_1st_by_time</span> <span class="o">=</span> <span class="p">{}</span>
+
+
+<span class="k">for</span> <span class="p">(</span><span class="n">station</span><span class="p">,</span> <span class="n">datetime</span><span class="p">),</span> <span class="n">data</span> <span class="ow">in</span> <span class="n">august_1_2013</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">]):</span>
+
+    <span class="k">if</span> <span class="n">station</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">august_1st_by_time</span><span class="p">:</span>
+        <span class="n">august_1st_by_time</span><span class="p">[</span><span class="n">station</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+    
+    <span class="n">august_1st_by_time</span><span class="p">[</span><span class="n">station</span><span class="p">][</span><span class="n">datetime</span><span class="p">]</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">entries</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">-</span> <span class="n">data</span><span class="o">.</span><span class="n">exits</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+
+<span class="n">august_1st_by_time</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">august_1st_by_time</span><span class="p">)</span>
+<span class="n">august_1st_by_time</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[119]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>1 AVE</th>
+      <th>103 ST</th>
+      <th>103 ST-CORONA</th>
+      <th>104 ST</th>
+      <th>110 ST</th>
+      <th>110 ST-CATHEDRL</th>
+      <th>110 ST-CPN</th>
+      <th>111 ST</th>
+      <th>116 ST</th>
+      <th>116 ST-COLUMBIA</th>
+      <th>...</th>
+      <th>WESTCHESTER SQ</th>
+      <th>WHITEHALL ST</th>
+      <th>WHITLOCK AVE</th>
+      <th>WILSON AVE</th>
+      <th>WINTHROP ST</th>
+      <th>WOODHAVEN BLVD</th>
+      <th>WOODLAWN ROAD</th>
+      <th>WORLD TRADE CTR</th>
+      <th>YORK ST</th>
+      <th>ZEREGA AVE</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2013-08-01 00:00:00</th>
+      <td>43</td>
+      <td>NaN</td>
+      <td>-1651</td>
+      <td>-275</td>
+      <td>-738</td>
+      <td>NaN</td>
+      <td>-778</td>
+      <td>-1566</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>-331</td>
+      <td>NaN</td>
+      <td>-181</td>
+      <td>-422</td>
+      <td>NaN</td>
+      <td>-42</td>
+      <td>401</td>
+      <td>682</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2013-08-01 00:00:12</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2013-08-01 00:00:13</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2013-08-01 00:00:25</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2013-08-01 00:02:02</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 382 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[120]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">august_1st_by_time</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span><span class="mi">20</span><span class="p">),</span> <span class="n">legend</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[120]:</div>
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x11c6f5610&gt;</pre>
+</div>
+
+</div>
+
+<div class="output_area"><div class="prompt"></div>
+
+
+<div class="output_png output_subarea ">
+<img src="data:image/png;base64,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
+c3PP3/8k/Yf+r1w654m5447P5b3vHf6SttKSny/Jtx55ZXpFSg4+OPXzX8qVx12Z+35yX/KjHyXH
+Hpvzdzk/S5/73gwsW/0j5cCdKzJ48DOzcNdjs9OhO+XB6+/N2388/MvLlT+4PftceGHeuNb5xfff
+cU2e/otLs/T88zPwkpfkq3ffPXxeedppWXbdsjzvqxfnJ7+6K1ced2V+ueT+7HfhhbljYCA577z0
+zZyZ4+es7mL74NUP5vRXXZDjvvSlzPjVr/LzUcLeJPna3XfnT2+4IbUmL37xipSyZpe37y5alBOu
+vXad+w0Nrfu5P/OZM4efl/W48MALc+E+F2bZNcvSf8vqYK5MK+mbvub52U3vuim3feS25GMfy7Kf
+3zLmNpfPXZ7z9z4/v3fc7+XHP/5xkuQ37/zNcDkXD+XXR3833W99P5c9c/XzfdZZZ+UNJ7wtz9r/
+zpS99lr1g3CS5J3vzOxnH5rnnHZ08o53JF/8YvLu3nnTe96TzJzZ3md6pb/92+QNb0jmzk2OPz4r
+0/wPzpuX/S+8MN9YuDB7XHBBnnTZZdlplPPVvr6+Mb/XDQ4O5nnPe16uv/76jSvbCJddlvz+7685
+7+ab1//D9B57vDC77vrU3PiWG3Pj21aff15y+CW5YPfRWy51lnZy+VMvX+94wrctuS3vP699POCl
+S3+17kDhvTDufaN8R1unbJ1Odthh/S2UPvvZ5AtfaC7aOs4/P3nTm9ru8+xnr/7hdThQGmePpFe/
+Ovna15Jk1Y+5H//4SfnMZ8YX2r34xcm83tB3Z56ZvO1tay4/5pjhnr3JcPmOOSY56KDk5JPXXK+z
+tJPZs2bnto+ubsNz3nnn5c8f8+f5k13+JH926J+NXYha6xb/l+SYJD8ccfvdSd651jp1IixadHb9
+5S+fuNH3f9nLXlbPOOOMca3b7XbrUXPm1K/fdVfTPu7o7x9zeyut6HTqQKcz6nrLhoZqp9ut3124
+sPaPWGeo260DnU4d7HRqZ8S2xnLxxb9TFy78/vgLPo5trtLf37T+4BiPdaU7+vvrOYsWjX//Y3nw
+wXGXa7TVliyp9bnPrXVgoH3XQ91uPf3OO8d8XVdauPDbdd68D497u4OdwaZydLvdetlll9Vaa13S
+v6TWWmun21lV/zrdTh0aGqq11rp8+fJxbG9ojdv9G3h8m6rT7dQVQytG7LC/1qHVZei21NOegYH7
+6uDgkk0v3EUX1To4/HoMDY2+yuDgcN0aXOtl21CxRz6uZcvWXb72037nnV+uc+e+b511Bgd72/n3
+f6/1T/+0djr9tb9//oj9dGq3u+5ruBFP6zr+3/+r9cUvHnv5/Pmn1euuO2nM5d3uUD333NRzz82a
+dWDdFWstpXaHhlbV5dEsHRqqu//kzNp9y1+smje0dPT1+zud2v3lL2t90YuGby/orxfO/u167rmp
+F+x/Qe3uuXett99ea621M8p74IGrHqhzjvhZveqSZXXkR8aym5bVTn+nDg3VetNNw/MW3/uLetNv
+/nadbXzxi5163U1DtXvSSfWuZ51Sb/3orWssnzOnU+fNW/eFWt9zsCHXv+WGetvvnFLf/Md71d3+
+ebd68fyLR12v2+3UTmc9r8kIDz74YK211sufdXm99yf3rrO8//b+em7OXee9fP0919cLLzy4Ll16
+/fgKP8rj7naHando9Mrc7YyY/+pX12Vf/Mb49tMzxkf78D5HeU+tz+BgrcuW3brOc7BixfrfiytG
+POZOp1OXLFlSu91u7azo9Lb7QL3j9q+uXr/TqfXZz6717LPr+2+6qf71jTfWWmtdftvy2unvrHwA
+q3ba7XbrhRceVB944MpV2+i/o79+8IU/ry/81a/q/b0DW//8/rrwBwuHp/tXPzcnXHNN/cIdd4zc
+5LqPvdOp9434kO12u7UuX14HhgaG3yvd7qo63el2a7f395Uvd+urX73ysQ/WTmd43bF0u93635f/
+d/3fV11Wc+65tdZa7156d73167fWJZcsqd1Ot3YG1nzdOt1uXT7a+2lwsPb3314XLvzOmPsbzZve
+NFTP+NYDa+6j91r1dzob9Xm2jvPPr/UpTxnfuus5VgwtH1qnPPPn17r2acLgYK1Pe9rw6dZK3U53
++H03OLjqw2qN99vKfTx4X+10hl/7zmCnDi0bqt3B4efhPxYsqN+/554xyzfaee/KfXQGRnku1/4Q
+rmMf/8fa109/em595jOfucayb9x1V/2Dq65atyzdWqdM2bjzx26nO+rztcH7baD+dDqrz/fW2f4o
+9x0crPXedQ/Zo+14zdtjHRzHY4xzytuWL68PjPIaTpavfrXWk0acvgwN1frkJ9f63/+9+fe1ode1
+2+3WgaH2inbnnafXq69+1ajbG/W4t5YDDjigzps3r3m/G2NTD42LFv2wDg2NcjI9Dp1OrbNnP6I+
++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
+0ESgBAAw0XR5AwC2cgIlAICJpMsbALANECgBAAAA0KTUbaTJdSmlbiuPBQDYhi1alEyfnuy882SX
+BABgg0opqbWu08RaoAQAAADAqMYKlHR5AwAAAKCJQAkAAACAJgIlAAAAAJoIlAAAAABoIlACAAAA
+oIlACQAAAIAmAiUAAAAAmgiUAAAAAGgiUAIAAACgiUAJAAAAgCYCJQAAAACaCJQAAAAAaCJQAgAA
+AKCJQAkAAACAJgIlAAAAAJoIlAAAAABoIlACAAAAoIlACQAAAIAmAiUAAAAAmgiUAAAAAGgiUAIA
+AACgiUAJAAAAgCYCJQAAAACaCJQAAAAAaCJQAgAAAKCJQAkAAACAJgIlAAAAAJoIlAAAAABoIlAC
+AAAAoIlACQAAAIAmAiUAAAAAmgiUAAAAAGgiUAIAAACgiUAJAAAAgCYCJQAAAACaCJQAAAAAaCJQ
+AgAAAKCJQAkAAACAJgIlAAAAAJoIlAAAAABoIlACAAAAoIlACQAAAIAmAiUAAAAAmgiUAAAAAGgi
+UAIAAACgiUAJAAAAgCYCJQAAAACaCJQAAAAAaCJQAgAAAKCJQAkAAACAJgIlAAAAAJoIlAAAAABo
+IlACAAAAoIlACQAAAIAmAiUAAAAAmgiUAAAAAGgiUAIAAACgiUAJAAAAgCYCJQAAAACaCJQAAAAA
+aCJQAgAAAKCJQAkAAACAJgIlAAAAAJoIlAAAAABoIlACAAAAoIlACQAAAIAmAiUAAAAAmgiUAAAA
+AGgiUAIAAACgiUAJAAAAgCYCJQAAAACaCJQAAAAAaCJQAgAAAKCJQAkAAACAJgIlAAAAAJoIlAAA
+AABoIlACAAAAoIlACQAAAIAmAiUAAAAAmgiUAAAAAGgiUAIAAACgiUAJAAAAgCYCJQAAAACaCJQA
+AAAAaCJQAgAAAKDJRgdKpZRXlVKuKaV0SilPWGvZu0spc0sp15VSnj9i/lGllKt6yz4xYv6MUsrX
+evMvKqU8YsSyN5ZSbuj9vWFjywsAAADA5rEpLZSuSvLyJD8fObOU8ugkr0ny6CTHJTmtlFJ6iz+d
+5MRa62FJDiulHNebf2KSRb35H0/yod62dk/yviRP7v29v5QycxPKDAAAAMAm2uhAqdZ6Xa31hlEW
+vTTJ6bXWwVrrLUluTHJ0KWWfJDvXWi/prffFJC/rTb8kyRd6099M8pze9AuSnF1rXVxrXZzknAyH
+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
+hgwoRURERERERERERzKgFBERERERERERHcmAUkREREREREREdCQDShERERERERER0ZEMKEVERERE
+REREREf+DXDkCG2bdHFUAAAAAElFTkSuQmCC
+"
+>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Continued-Analysis-of-1">Continued Analysis of 1<a class="anchor-link" href="#Continued-Analysis-of-1">&#182;</a></h2><p>We see a large cluster at ~9 AM and then again in the evening. This is about when people commute to and from work, so we have some info as to why this divergence occcurs between entries and exits.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
@@ -28049,7 +29583,7 @@ dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="prompt input_prompt">In&nbsp;[122]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_by_station</span> <span class="o">=</span> <span class="n">august_1_2013</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s">&#39;station&#39;</span><span class="p">)</span>
@@ -28080,7 +29614,7 @@ dtype: float64
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[107]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[122]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -28142,7 +29676,6 @@ dtype: float64
 <li>NJT Bus Red &amp; Tan in Hudson County: 4, 16</li>
 <li>NJT Bus A&amp;C Bus (inside Newport Centre Mall)</li>
 <li>PATH at Newport</li>
-<li>BSicon BOOT.svg NY Waterway</li>
 </ul>
 <p>This trend is found accross the top 5 stations, as each are major commuting hubs for different lines and means of transportation: e.g. <code>Penn station</code> also has NJ transit and <code>42nd St</code> connects to the bus terminal. <code>Exchange Place</code> has it in the name.</p>
 <p>I am unfamiliar with NJ transportation, but according to this Map, <code>PAVONIA/NEWPORT</code> is probably a majory artery for people commuting to and from NJ.</p>
@@ -28162,7 +29695,7 @@ dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[108]:</div>
+<div class="prompt input_prompt">In&nbsp;[123]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">df_by_station</span> <span class="o">=</span> <span class="n">august_1_2013</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s">&#39;station&#39;</span><span class="p">,</span> <span class="s">&#39;scp&#39;</span><span class="p">])</span>
@@ -28194,7 +29727,7 @@ dtype: float64
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[108]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[123]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -28281,7 +29814,7 @@ dtype: float64
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[114]:</div>
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">scp_by_usage</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="s">&#39;cummulative_flow&#39;</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="s">&#39;station&#39;</span><span class="p">)</span>
@@ -28295,11 +29828,11 @@ dtype: float64
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[114]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[99]:</div>
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x13e4d3950&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x1137ac950&gt;</pre>
 </div>
 
 </div>
@@ -28541,7 +30074,7 @@ RK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[115]:</div>
+<div class="prompt input_prompt">In&nbsp;[124]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">scp_by_usage</span><span class="p">[</span><span class="n">scp_by_usage</span><span class="o">.</span><span class="n">station</span> <span class="o">==</span> <span class="s">&#39;PAVONIA/NEWPORT&#39;</span><span class="p">]</span>
@@ -28555,7 +30088,7 @@ RK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[115]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[124]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -28648,7 +30181,7 @@ RK5CYII=
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[116]:</div>
+<div class="prompt input_prompt">In&nbsp;[125]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span class="n">scp_by_usage_independent</span> <span class="o">=</span> <span class="p">[]</span>
@@ -28679,7 +30212,7 @@ RK5CYII=
 <div class="output">
 
 
-<div class="output_area"><div class="prompt output_prompt">Out[116]:</div>
+<div class="output_area"><div class="prompt output_prompt">Out[125]:</div>
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 <div>
@@ -28698,24 +30231,24 @@ RK5CYII=
     <tr>
       <th>0</th>
       <td>303459</td>
-      <td>280665</td>
-      <td>22794</td>
+      <td>3558</td>
+      <td>953</td>
       <td>00-00-01</td>
       <td>PAVONIA/NEWPORT</td>
     </tr>
     <tr>
       <th>1</th>
       <td>133520</td>
-      <td>1414</td>
-      <td>132106</td>
+      <td>588</td>
+      <td>1097</td>
       <td>00-01-00</td>
       <td>EXCHANGE PLACE</td>
     </tr>
     <tr>
       <th>2</th>
       <td>49188</td>
-      <td>44769</td>
-      <td>4419</td>
+      <td>188</td>
+      <td>23</td>
       <td>00-04-00</td>
       <td>EXCHANGE PLACE</td>
     </tr>
@@ -28795,6 +30328,493 @@ RK5CYII=
 
 </div>
 </div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[126]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre><span class="n">pav</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="o">.</span><span class="n">station</span> <span class="o">==</span> <span class="s">&#39;PAVONIA/NEWPORT&#39;</span><span class="p">]</span>
+
+<span class="n">pav</span> <span class="o">=</span> <span class="n">pav</span><span class="o">.</span><span class="n">sort</span><span class="p">(</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="n">pav</span><span class="p">[[</span><span class="s">&#39;entries&#39;</span><span class="p">,</span> <span class="s">&#39;exits&#39;</span><span class="p">,</span> <span class="s">&#39;datetime&#39;</span><span class="p">,</span> <span class="s">&#39;scp&#39;</span><span class="p">]]</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area"><div class="prompt output_prompt">Out[126]:</div>
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>entries</th>
+      <th>exits</th>
+      <th>datetime</th>
+      <th>scp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>124587</th>
+      <td>1626</td>
+      <td>335</td>
+      <td>2013-07-30 19:45:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124607</th>
+      <td>1544</td>
+      <td>245</td>
+      <td>2013-08-02 19:37:52</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124546</th>
+      <td>1536</td>
+      <td>351</td>
+      <td>2013-07-30 20:17:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124540</th>
+      <td>1489</td>
+      <td>233</td>
+      <td>2013-07-29 19:05:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124581</th>
+      <td>1468</td>
+      <td>145</td>
+      <td>2013-07-29 18:33:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124635</th>
+      <td>1420</td>
+      <td>235</td>
+      <td>2013-07-31 19:34:29</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124559</th>
+      <td>1335</td>
+      <td>122</td>
+      <td>2013-08-01 18:29:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124601</th>
+      <td>1325</td>
+      <td>109</td>
+      <td>2013-08-01 18:25:53</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124565</th>
+      <td>1298</td>
+      <td>251</td>
+      <td>2013-08-02 19:53:54</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124563</th>
+      <td>1286</td>
+      <td>310</td>
+      <td>2013-08-02 11:17:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124579</th>
+      <td>1245</td>
+      <td>381</td>
+      <td>2013-07-29 10:09:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124585</th>
+      <td>1229</td>
+      <td>464</td>
+      <td>2013-07-30 11:21:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124644</th>
+      <td>1227</td>
+      <td>273</td>
+      <td>2013-08-01 21:00:30</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124544</th>
+      <td>1226</td>
+      <td>351</td>
+      <td>2013-07-30 11:53:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124629</th>
+      <td>1199</td>
+      <td>127</td>
+      <td>2013-07-30 18:24:16</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124593</th>
+      <td>1185</td>
+      <td>443</td>
+      <td>2013-07-31 21:25:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124605</th>
+      <td>1152</td>
+      <td>437</td>
+      <td>2013-08-02 11:13:52</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124552</th>
+      <td>1088</td>
+      <td>445</td>
+      <td>2013-07-31 21:29:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124649</th>
+      <td>1048</td>
+      <td>112</td>
+      <td>2013-08-02 18:00:29</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124549</th>
+      <td>1001</td>
+      <td>262</td>
+      <td>2013-07-31 08:53:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124677</th>
+      <td>983</td>
+      <td>321</td>
+      <td>2013-07-31 19:58:56</td>
+      <td>00-00-03</td>
+    </tr>
+    <tr>
+      <th>124624</th>
+      <td>983</td>
+      <td>246</td>
+      <td>2013-07-29 21:24:16</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124633</th>
+      <td>966</td>
+      <td>329</td>
+      <td>2013-07-31 11:10:29</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124671</th>
+      <td>961</td>
+      <td>241</td>
+      <td>2013-07-30 18:52:55</td>
+      <td>00-00-03</td>
+    </tr>
+    <tr>
+      <th>124686</th>
+      <td>922</td>
+      <td>406</td>
+      <td>2013-08-01 20:59:52</td>
+      <td>00-00-03</td>
+    </tr>
+    <tr>
+      <th>124555</th>
+      <td>912</td>
+      <td>211</td>
+      <td>2013-08-01 08:44:09</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124627</th>
+      <td>896</td>
+      <td>380</td>
+      <td>2013-07-30 10:00:16</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124590</th>
+      <td>889</td>
+      <td>316</td>
+      <td>2013-07-31 08:49:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124537</th>
+      <td>879</td>
+      <td>365</td>
+      <td>2013-07-29 09:11:28</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124885</th>
+      <td>857</td>
+      <td>192</td>
+      <td>2013-07-31 09:43:13</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>124942</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-08-01 08:39:14</td>
+      <td>00-00-09</td>
+    </tr>
+    <tr>
+      <th>124640</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-08-01 08:42:59</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124759</th>
+      <td>0</td>
+      <td>19</td>
+      <td>2013-07-31 06:09:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124694</th>
+      <td>0</td>
+      <td>27</td>
+      <td>2013-07-27 08:27:15</td>
+      <td>00-00-04</td>
+    </tr>
+    <tr>
+      <th>124695</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-07-27 08:27:27</td>
+      <td>00-00-04</td>
+    </tr>
+    <tr>
+      <th>124950</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-08-02 09:36:39</td>
+      <td>00-00-09</td>
+    </tr>
+    <tr>
+      <th>124772</th>
+      <td>0</td>
+      <td>61</td>
+      <td>2013-08-02 04:21:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124706</th>
+      <td>0</td>
+      <td>15</td>
+      <td>2013-07-29 04:14:54</td>
+      <td>00-00-04</td>
+    </tr>
+    <tr>
+      <th>124892</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-07-31 19:43:48</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>124598</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-08-01 08:43:32</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124899</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-08-01 08:37:58</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>124898</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-08-01 08:28:59</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>124595</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-08-01 01:37:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124594</th>
+      <td>0</td>
+      <td>0</td>
+      <td>2013-07-31 22:17:11</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124895</th>
+      <td>0</td>
+      <td>99</td>
+      <td>2013-08-01 08:05:18</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>124592</th>
+      <td>0</td>
+      <td>56</td>
+      <td>2013-07-31 17:13:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124894</th>
+      <td>0</td>
+      <td>8</td>
+      <td>2013-08-01 06:41:11</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>124893</th>
+      <td>0</td>
+      <td>416</td>
+      <td>2013-08-01 02:29:11</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>124897</th>
+      <td>0</td>
+      <td>2</td>
+      <td>2013-08-01 08:28:50</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>124524</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 04:05:57</td>
+      <td>00-00-00</td>
+    </tr>
+    <tr>
+      <th>124566</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 03:33:13</td>
+      <td>00-00-01</td>
+    </tr>
+    <tr>
+      <th>124608</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 02:12:16</td>
+      <td>00-00-02</td>
+    </tr>
+    <tr>
+      <th>124650</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 02:35:08</td>
+      <td>00-00-03</td>
+    </tr>
+    <tr>
+      <th>124692</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 01:50:54</td>
+      <td>00-00-04</td>
+    </tr>
+    <tr>
+      <th>124735</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 01:21:13</td>
+      <td>00-00-05</td>
+    </tr>
+    <tr>
+      <th>124776</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 02:18:40</td>
+      <td>00-00-06</td>
+    </tr>
+    <tr>
+      <th>124817</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 03:40:45</td>
+      <td>00-00-07</td>
+    </tr>
+    <tr>
+      <th>124858</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 00:44:59</td>
+      <td>00-00-08</td>
+    </tr>
+    <tr>
+      <th>124909</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 00:24:34</td>
+      <td>00-00-09</td>
+    </tr>
+    <tr>
+      <th>124954</th>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>2013-07-27 02:07:40</td>
+      <td>00-00-0A</td>
+    </tr>
+  </tbody>
+</table>
+<p>473 rows × 4 columns</p>
+</div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython2"><pre> 
+</pre></div>
+
+</div>
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
