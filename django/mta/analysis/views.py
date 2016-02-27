@@ -55,7 +55,7 @@ def parseInputVariables(raw_get):
         minute=input_data['time']['start']['minutes'],
         second=0,
     )
-    input_data['date']['start'] -= timedelta(seconds=1)
+    # input_data['date']['start'] -= timedelta(seconds=1)
 
     input_data['date']['end'] = input_data['date']['end'].replace(
         hour=input_data['time']['end']['hours'],
@@ -81,6 +81,7 @@ def get(request):
 
     raw_data = []
     if len(input_data['date']['list']) > 0:
+        print('\n')
         print('LIST', input_data['date']['list'])
         raw_data = Stats.objects.filter(
             date__in=input_data['date']['list']
@@ -88,6 +89,8 @@ def get(request):
 
     else:
         ''' add in time range '''
+        print('\n')
+
         print('RANGE', input_data['date']['start'], input_data['date']['end'])
         raw_data = Stats.objects.filter(
             datetime__range=(
@@ -167,11 +170,11 @@ def get(request):
         'code': 'GOOD',
         'when': datetime.now(),
         # 'results': df_to_return.to_dict(),
-        'results': json.loads(df_to_return.to_json(orient='columns')),
         'analysis': {
             'max': json.loads(df_max.to_json(orient='columns')),
             'min': json.loads(df_min.to_json(orient='columns')),
-            'mean': json.loads(df_mean.to_json(orient='columns'))
+            'mean': json.loads(df_mean.to_json(orient='columns')),
+            'raw': json.loads(df_to_return.to_json(orient='columns')),
         }
     }
     print('\n\n')

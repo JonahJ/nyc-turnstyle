@@ -36,58 +36,23 @@ angular.module('MTA', ['datePicker', "agGrid"])
             $scope.min_date = moment().year(2013).month(5).day(29);
             $scope.max_date = moment().year(2013).month(7).day(2);
 
-            $scope.gridOptions = {
-                columnDefs: [],
-                rowData: [],
-                rowSelection: 'multiple',
-                enableColResize: true,
-                enableSorting: true,
-                enableFilter: true,
-                groupHeaders: true,
-                rowHeight: 22,
-                suppressRowClickSelection: true
-
-            };
-
-            $scope.gridOptionsMax = {
-                columnDefs: [],
-                rowData: [],
-                rowSelection: 'multiple',
-                enableColResize: true,
-                enableSorting: true,
-                enableFilter: true,
-                groupHeaders: true,
-                rowHeight: 22,
-                suppressRowClickSelection: true
-
-            };
-
-            $scope.gridOptionsMin = {
-                columnDefs: [],
-                rowData: [],
-                rowSelection: 'multiple',
-                enableColResize: true,
-                enableSorting: true,
-                enableFilter: true,
-                groupHeaders: true,
-                rowHeight: 22,
-                suppressRowClickSelection: true
-
-            };
-
-            $scope.gridOptionsMean = {
-                columnDefs: [],
-                rowData: [],
-                rowSelection: 'multiple',
-                enableColResize: true,
-                enableSorting: true,
-                enableFilter: true,
-                groupHeaders: true,
-                rowHeight: 22,
-                suppressRowClickSelection: true
-
-            };
-
+            var grid_pref = {
+                  columnDefs: [],
+                  rowData: [],
+                  rowSelection: 'multiple',
+                  enableColResize: true,
+                  enableSorting: true,
+                  enableFilter: true,
+                  groupHeaders: true,
+                  rowHeight: 22,
+                  suppressRowClickSelection: true
+            }
+            $scope.grids = {
+              min: _.clone(grid_pref),
+              max: _.clone(grid_pref),
+              mean: _.clone(grid_pref),
+              raw: _.clone(grid_pref),
+            }
 
             $scope.submit = function() {
                 console.log('Getting data');
@@ -106,23 +71,18 @@ angular.module('MTA', ['datePicker', "agGrid"])
                     hours: $scope.input.time.end_date.getHours(),
                 }
 
-                $scope.gridOptions.api.setRowData([]);
-                $scope.gridOptions.api.setColumnDefs([]);
-                $scope.gridOptionsMax.api.setRowData([]);
-                $scope.gridOptionsMax.api.setColumnDefs([]);
-                $scope.gridOptionsMin.api.setRowData([]);
-                $scope.gridOptionsMin.api.setColumnDefs([]);
-                $scope.gridOptionsMean.api.setRowData([]);
-                $scope.gridOptionsMean.api.setColumnDefs([]);
+                for(var grid_key in $scope.grids){
 
-                $scope.gridOptions.api.refreshView();
-                $scope.gridOptionsMax.api.refreshView();
-                $scope.gridOptionsMin.api.refreshView();
-                $scope.gridOptionsMean.api.refreshView();
+                  // try{
+                    $scope.grids[grid_key].api.setRowData([]);
+                    $scope.grids[grid_key].api.setColumnDefs([]);
+                    $scope.grids[grid_key].api.refreshView();
+                  // } catch(e){}
+
+                }
 
 
-                var to_send = _.clone($scope.input);
-
+                var to_send = $scope.input;//_.clone($scope.input);
 
                 // console.log(to_send.time.start_date, to_send.time.start_date.toString().substring(0, 15));
                 to_send.date.start = to_send.date.start.toString().substring(0, 15);
@@ -200,7 +160,7 @@ angular.module('MTA', ['datePicker', "agGrid"])
                                   raw_rows.push(data[split_on]);
                                 } else {
 
-                                  console.log(typeof data[split_on]);
+                                  // console.log(typeof data[split_on]);
                                   var row = {
                                     name: split_on,
                                     value: data[split_on]
@@ -215,11 +175,14 @@ angular.module('MTA', ['datePicker', "agGrid"])
                             }
                         }
 
+                        for(var grid_key in $scope.grids){
 
-                        var raw = getTableData(data.results)
-                        var max = getTableData(data.analysis.max);
-                        var min = getTableData(data.analysis.min);
-                        var mean = getTableData(data.analysis.mean);
+                          var grid_content = getTableData(data.analysis[grid_key]);
+                          $scope.grids[grid_key].api.setRowData(grid_content.rows);
+                          $scope.grids[grid_key].api.setColumnDefs(grid_content.cols);
+                          $scope.$apply();
+                          $scope.grids[grid_key].api.refreshView();
+                        }
 
                         /**
                          * For  'results': json.loads(df_to_return.to_json(orient='records')),
@@ -262,23 +225,6 @@ angular.module('MTA', ['datePicker', "agGrid"])
                         //         field: key
                         //     })
                         // }
-
-                        $scope.gridOptions.api.setRowData(raw.rows);
-                        $scope.gridOptions.api.setColumnDefs(raw.cols);
-                        $scope.gridOptionsMax.api.setRowData(max.rows);
-                        $scope.gridOptionsMax.api.setColumnDefs(max.cols);
-                        $scope.gridOptionsMin.api.setRowData(min.rows);
-                        $scope.gridOptionsMin.api.setColumnDefs(min.cols);
-                        $scope.gridOptionsMean.api.setRowData(mean.rows);
-                        $scope.gridOptionsMean.api.setColumnDefs(mean.cols);
-
-
-
-                        $scope.$apply();
-                        $scope.gridOptions.api.refreshView();
-                        $scope.gridOptionsMax.api.refreshView();
-                        $scope.gridOptionsMin.api.refreshView();
-                        $scope.gridOptionsMean.api.refreshView();
                     }
                 })
 
